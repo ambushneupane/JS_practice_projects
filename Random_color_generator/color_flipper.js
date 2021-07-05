@@ -7,16 +7,15 @@ color_name=document.querySelector(".color-name");
 
 
 btn.addEventListener("click",function(){
-    rand_red=rand_num_gen(0,255);
-    // console.log(rand_red);
-    rand_green=rand_num_gen(0,255);
-    rand_blue=rand_num_gen(0,255);
+    rand_red=rand_num_gen(0,256);
+    rand_green=rand_num_gen(0,256);
+    rand_blue=rand_num_gen(0,256);
     bg_color=`rgb(${rand_red},${rand_green},${rand_blue})`
     document.body.style.backgroundColor= bg_color;
     
     // console.log(display_color_name);
     color_name.innerText=bg_color;
-    console.log(color_name);
+   
 
 })
 
